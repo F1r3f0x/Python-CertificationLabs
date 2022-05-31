@@ -6,6 +6,7 @@
 IS_PALINDROME = 'It\'s a palindrome'
 NOT_PALINDROME = 'It\'s not a palindrome'
 
+
 def is_palindrome(text: str) -> bool:
     if len(text) == 0:  # assume that an empty string isn't a palindrome;
         return NOT_PALINDROME
@@ -20,6 +21,7 @@ def is_palindrome(text: str) -> bool:
         return IS_PALINDROME
     else:
         return NOT_PALINDROME
+
 
 if __name__ == '__main__':
     assert is_palindrome('Ten animals I slam in a net') == IS_PALINDROME   
